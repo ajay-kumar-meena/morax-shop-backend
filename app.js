@@ -12,9 +12,7 @@ import Razorpay from "razorpay";
 
 export const nodeCache = new NodeCache();
 
-dotenv.config({
-     path: './.env'
-})
+dotenv.config()
 
 
 
