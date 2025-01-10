@@ -1,0 +1,10 @@
+MONGO_URI="mongodb://localhost:27017"
+PORT=3000
+JWT_SECRET=masdfjlksjdf
+CLOUDINARY_CLOUD_NAME="adsfdsf"
+CLOUDINARY_API_KEY=adfsdf"
+CLOUDINARY_API_SECRET="sadfadsf"
+NODE_ENV=DEVELOPMENT="Dfdsf"
+CLIENT_URL=http://localhost:5173
+RAZORPAY_API_KEY="sfsdfds"
+RAZORPAY_API_SECRET="sdfds"
