@@ -26,6 +26,8 @@ app.get("/latest", getlatestProducts);
 //To get all unique Categories  - /api/v1/product/categories
 app.get("/categories", getAllCategories);
 
+app.get('/:id', getSingleProduct);
+
 //To get all Products   - /api/v1/product/admin-products
 app.use(isAuthenticated)
 
@@ -39,7 +41,6 @@ app.get("/admin-products", adminOnly, getAdminProducts);
 // To get, update, delete Product
 app
   .route("/:id")
-  .get(getSingleProduct)
   .put(adminOnly, multiUpload, updateProduct)
   .delete(adminOnly, deleteProduct);
 

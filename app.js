@@ -9,17 +9,14 @@ import { v2 as cloudinary} from 'cloudinary'
 import NodeCache from 'node-cache'
 import Razorpay from "razorpay";
 
-
 export const nodeCache = new NodeCache();
 
 dotenv.config()
 
 
-
-
 export const razorpayInstance = new Razorpay({
-  key_id: process.env.RAZORPAY_API_KEY,
-  key_secret: process.env.RAZORPAY_API_SECRET
+  key_id: process.env.RAZORPAY_API_KEY || undefined,
+  key_secret: process.env.RAZORPAY_API_SECRET || undefined,
 });
 
 
